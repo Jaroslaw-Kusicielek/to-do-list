@@ -4,7 +4,7 @@
 
 ## Demo
 
-https://jaroslaw.kusicielek.github.com/to-do-list/
+https://jaroslaw-kusicielek.github.io/to-do-list/
 
 ## Description
 
