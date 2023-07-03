@@ -75,6 +75,26 @@
         toggleDoneEvents();
     };
 
+    const renderButtons = () => {
+        const buttonsElement = document.querySelector(".js-buttons");
+
+        if (!tasks.length) {
+            buttonsElement.innerHTML = "";
+            return;
+        } 
+        
+        buttonsElement.innerHTML = `
+            <button class="buttons__button js-toggleHideDoneTasks">
+                ${hideDoneTasks ? "Pokaż" : "Ukryj"} ukończone
+            </button>
+        
+            <button class="buttons__button js-markAllTasksDone" ${tasks.every(({done}) => done) ? "disabled" : ""}>
+                Ukończ wszystkie
+            </button>
+
+        `;
+    };
+
     const onFormSubmit = (event) => {
         event.preventDefault();
 
@@ -91,6 +111,7 @@
 
     const render = () => {
         renderTasks();
+        renderButtons();
     };
 
     const init = () => {
