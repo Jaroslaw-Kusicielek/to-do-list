@@ -49,7 +49,7 @@
         });
     };
 
-    const render = () => {
+    const renderTasks = () => {
         let htmlString = "";
 
         for (const task of tasks) {
@@ -87,6 +87,10 @@
         }
 
         newTaskElement.focus();
+    };
+
+    const render = () => {
+        renderTasks();
     };
 
     const init = () => {
