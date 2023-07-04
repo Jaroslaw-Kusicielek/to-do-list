@@ -14,3 +14,5 @@ Basic website functionalities:
 - adding task
 - removing task 
 - marking of the completed task
+- marking all completed tasks
+- hiding done tasks
