@@ -27,6 +27,7 @@
     border: none;
     color: white;
     padding: 0;
+    transition: 1s;
 }
 
 .tasks__button--remove {
